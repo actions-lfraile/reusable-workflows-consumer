@@ -8,6 +8,6 @@ jobs:
   reuse_workflow: 
     uses: ./.github/workflows/base-workflow.yml
     with:
-       netcore_version: mona
+       netcore_version: 3.1.402
     secrets:
        token: demo
