@@ -6,7 +6,7 @@ on:
 
 jobs:
   reuse_workflow: 
-    uses: ./.github/workflows/base-workflow.yml
+    uses: lfraile-dotnet-2022-workshop/.github/workflows/reusable-workflow.yml@main
     with:
        netcore_version: 3.1.402
     secrets:
