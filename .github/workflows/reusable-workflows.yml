@@ -6,7 +6,7 @@ on:
 
 jobs:
   reuse_workflow: 
-    uses: lfraile-dotnet-2022-workshop/.github/workflows/reusable-workflow.yml@main
+    uses: lfraile-dotnet-2022-workshop/.github/.github/workflows/reusable-workflow.yml@main
     with:
        netcore_version: mona
     secrets:
