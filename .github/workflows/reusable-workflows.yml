@@ -6,7 +6,7 @@ on:
 
 jobs:
   reuse_workflow: 
-    uses: lfraileorg/shared-actions/.github/workflows/base-workflow.yml@main
+    uses: actions-lfraile/shared-actions/.github/workflows/base-workflow.yml@main
     with:
        netcore_version: 3.1.402
        username: lfraile
