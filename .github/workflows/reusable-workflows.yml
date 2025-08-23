@@ -6,7 +6,7 @@ on:
 
 jobs:
   reuse_workflow: 
-    uses: actions-lfraile/shared-actions/.github/workflows/base-workflow.yml@main
+    uses: lfraileorg/shared-actions/.github/workflows/base-workflow.yml@main
     with:
        netcore_version: 3.1.402
        username: lfraile
@@ -16,5 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     needs: reuse_workflow
     steps:
-      - run: echo ${{ needs.reuse_workflow.outputs.firstword }} ${{ needs.reuse_workflow.outputs.secondword }}
-        name: Show outputs
+      - run:  echo ${{ needs.job1.outputs.firstword }} ${{ needs.job1.outputs.secondword }}
