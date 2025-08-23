@@ -10,5 +10,6 @@ jobs:
     uses: lfraileorg/shared-actions/.github/workflows/base-workflow.yml@main
     with:
        netcore_version: 3.1.402
+       username: lfraile
     secrets:
        token: demo
