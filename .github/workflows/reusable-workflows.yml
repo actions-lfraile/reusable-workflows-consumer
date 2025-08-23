@@ -5,8 +5,12 @@ on:
   push:
   workflow_dispatch:
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "hola"
+jobs:      
+  reuse_workflow: 
+    uses: actions-lfraile/shared-actions/.github/workflows/base-workflow.yml@main
+    with:
+       netcore_version: 3.1.402
+       username: lfraile
+    secrets:
+       token: demo
+
