@@ -12,7 +12,7 @@ jobs:
        netcore_version: 3.1.402
        username: lfraile
     secrets:
-       token: demo
+       token: ${{ secrets.SECRET_COMPOSITE_DEMO }}
        
   dependant_reuse:
     runs-on: ubuntu-latest
