@@ -7,7 +7,7 @@ on:
 
 permissions: 
   contents: read
-  checks: write
+  checks: read
 
 jobs:      
   reuse_workflow: 
