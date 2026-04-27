@@ -5,6 +5,9 @@ on:
   push:
   workflow_dispatch:
 
+permissions: 
+  contents: read
+
 jobs:      
   reuse_workflow: 
     uses: actions-lfraile/shared-actions/.github/workflows/reusable-workflow.yml@main
